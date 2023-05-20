@@ -1,0 +1,46 @@
+{
+    "extends": [
+        "next/babel",
+        "next/core-web-vitals"
+    ],
+    "plugins": [
+        "simple-import-sort"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "warn",
+            "always-multiline"
+        ],
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "warn",
+            "unix"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "simple-import-sort/imports": [
+            "warn",
+            {
+                "groups": [
+                    ["^\\u0000"],
+                    ["^node:"],
+                    ["^@?\\w"],
+                    ["^"],
+                    ["^\\."]
+                ]
+            }
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ]
+    }
+}
